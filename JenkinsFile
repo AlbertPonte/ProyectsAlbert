@@ -10,7 +10,7 @@ pipeline{
     stages{"Tareas de limpieza"}
     steps{
       //Agarra el repo en el que esta el código que necesitamos correr
-      git ''
+      git 'https://github.com/AlbertPonte/ProyectsAlbert.git'
       //Ejecutar la tarea clean de gradle
       sh 'gradle clean'
     }
